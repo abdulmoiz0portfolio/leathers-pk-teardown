@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example Leather Co. — Handcrafted Leather Goods</title>
+<meta name="description" content="Clean-room layout study: placeholder storefront inspired by common e-commerce patterns.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="announce">Free delivery on orders above Rs. 5,000</div>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="logo" href="#">Example Leather Co.</a>
+    <nav class="main-nav">
+      <a href="#">Home</a>
+      <a href="#categories">Shop</a>
+      <a href="#categories">Belts</a>
+      <a href="#categories">Wallets</a>
+      <a href="#categories">Watches</a>
+      <a href="#" class="sale">Sale</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#">Login</a>
+      <button class="cart-btn" id="cartBtn" aria-label="Cart">Cart <span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <h1>Timeless craft,<br>made to last.</h1>
+        <p>Placeholder copy — full-grain leather goods, stitched by hand and built for decades of daily use.</p>
+        <a class="btn btn-light" href="#featured">Shop the collection</a>
+      </div>
+      <div class="hero-art" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="cats" id="categories">
+    <div class="wrap">
+      <h2>Our Collections</h2>
+      <div class="cat-grid">
+        <a class="cat-tile" href="#featured"><span>Belts</span></a>
+        <a class="cat-tile" href="#featured"><span>Wallets</span></a>
+        <a class="cat-tile" href="#featured"><span>Watches</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured" id="featured">
+    <div class="wrap">
+      <h2>Featured Products</h2>
+      <div class="product-grid" id="productGrid"><!-- cards injected by app.js --></div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <h2>Why choose us</h2>
+      <div class="why-grid">
+        <div><h3>Full-grain leather</h3><p>Placeholder benefit copy.</p></div>
+        <div><h3>Hand-stitched</h3><p>Placeholder benefit copy.</p></div>
+        <div><h3>Easy exchange</h3><p>Placeholder benefit copy.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="wrap">
+      <h2>Join the Inner Circle</h2>
+      <p>Placeholder newsletter copy.</p>
+      <form class="nl-form" onsubmit="return false">
+        <input type="email" placeholder="Email address" required>
+        <button class="btn btn-light" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div><h4>Quick Links</h4><a href="#">Home</a><a href="#">Shop</a><a href="#">Sale</a></div>
+    <div><h4>Customer Care</h4><a href="#">FAQs</a><a href="#">Shipping Policy</a><a href="#">Exchange Policy</a></div>
+    <div><h4>Address</h4><p>Placeholder street<br>Placeholder city</p></div>
+  </div>
+  <div class="wrap foot-base"><small>© 2026 Example Leather Co. — layout study, not a real store.</small></div>
+</footer>
+
+<button class="wa-float" id="waBtn" aria-label="Chat">✆</button>
+<div class="sticky-cart" id="stickyCart" hidden>
+  <span id="stickyText">0 items in cart</span>
+  <a class="btn btn-light" href="#">View cart</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
